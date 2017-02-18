@@ -8,18 +8,27 @@
 	<meta charset="UTF-8">
 	<title>learn_test.html!</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+
+		<!-- ビューポートの設定 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
 </head>
 
 <!--==================================================================-->
 
 <!--
-body直下のh1に対して装飾を与える文
-<style>body>h1{}</style>
+body直下のpに対して装飾を与える文
+<style> body>p{line-height: 0px;} </style>
 
 -->
 
 <body>	<!--　ここにサイトに表示するコンテンツ内容を記述　-->
-	<h1>HTMLリファレンスサイト</h1>
+	<header>
+		<h1>HTMLリファレンスサイト</h1>
+	</header>
+	
+	<div class="wrapper">
+
 	<h2>現状説明</h2>
 
 	<p>私は現在、HTMLの学習をしております。 </p><!--　<p>とは段落を示すタグ　-->
@@ -32,51 +41,62 @@ body直下のh1に対して装飾を与える文
 	  <li>それらを作成するには&lt;HTML&gt;や&lt;CSS&gt;が出来ない事には始まらない！</li>
 	  <li>だったら学習がてら、忘れないようにリファレンスも作ってしまえ！</li>
 	</ul>	<!--リスト表示(Unordered List)-->
+		
 
 
 	<h2 class="contents_table">目次</h2>
-	<ol>
+	<div class="off_float">
+	<ol class="contents_list">
 	  <li>最初の一歩</li>
 	  <li>タイトルの設定</li>
 	  <li>文字の表示</li>
 	  <li>サブタイトルの表示</li>
 	  <li>リストの表示</li>
 	  <li>強調表示</li>
+	</ol>	<!--数字付きリスト表示(Ordered List)-->
+
+	
+	<ol start="7" class="contents_list">
 	  <li>ハイパーリンク</li>
 	  <li>画像の表示</li>
 	  <li>作者情報の表示</li>
 	  <li>CSSの書き方、呼び出し方</li>
 	  <li>CSSのよく使う設定</li>
-	</ol>	<!--数字付きリスト表示(Ordered List)-->
-
-
-
+	  <li></li>		
+	</ol>
+	
+	</div>
+	
+	
 	<h2 class="section_margin">1.最初の一歩</h2>
 	<p>とりあえず難しい事は考えずに、基本の書式を書いてみましょう。</p>
-	<div class="parallax">
+	<h4>sample001.html</h4>
+	<div class="program_box">
+		<p>&lt;&#33;DOCTYPE html&gt;</p>
+
 		<p>&lt;html&gt;</p>
 		
 		<!-- head -->
 		<p>&lt;head&gt;</p>
+			<p class="tab">&lt;meta charset="UTF-8"&gt;</p>
 		<p>&lt;/head&gt;</p>
-		
+
 		<!-- body -->
 		<p>&lt;body&gt;</p>
-			<div class="tab">
-			<p>&lt;p&gt;この文章をコピペしたら表示されるよ！&lt;/p&gt;</p>
-			</div>
+			<p class="tab">&lt;p&gt;この文章をコピペしたら表示されます！&lt;/p&gt;</p>
 		<p>&lt;/body&gt;</p>
 		
-		<p>&lt;/head&gt;</p>
+		<p>&lt;/html&gt;</p>
 	</div>
 	
-	
+	</div>
 	
 	
   	<footer class="section_margin">
 	  <p><a href="https://en.wikipedia.org/wiki/HTML">HTMLとは</a></p>
 	  <address>
-	  プログラミング歴1年　初心者プログラマ作　2017-02-13日更新
+		  <p>プログラミング歴1年　初心者プログラマ作　2017-02-09~ 2017-02-19日更新</p>
+		  <p>walk on</p>
 	  </address>
 	</footer>
 

@@ -1,42 +1,132 @@
 @charset "UTF-8";
 
-*{
-}	/*全体に適応*/
+*{}	/*全体に適応*/
 
 
 body {
-	background-color:antiquewhite;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	font-style: normal;
-	font-weight: 200;
+	background-color: antiquewhite; /*背景色を変更*/
+	color: black; /*文字の色を変更*/
+	font-size: 22px;
+
+} /*tagの修飾*/ /*bodyに追加修飾*/
+
+header{
+	border-bottom: 2px solid black; /*領域の下に線を引く(太さ、色)*/
+	text-align: center; /*文字の表示位置を中央に*/
+}
+
+.wrapper{
+	width: 1200px; /*表示領域を指定*/
+	margin: 0 auto; /*左右の表示域を標準に設定*/
+	padding: 0px;
 }
 
 .section_margin{
-	margin-top:100px;
-}	/*ハッシュタグ*/
+	margin-top: 100px; /*margin:すべてのコンテンツの間を空ける*/
+} /*クラス*/ /*大きい項目ごとに適応*/
 
 .contents_table{
-	margin-top:25px;
-}
+	margin-top: 25px;
+} /*目次に適応*/
 
-.contents_box{	
-	
-}
-.parallax{
-	background-color: aliceblue;
-	margin-left:10px;
+
+
+/*サンプルプログラムの修飾------------------------------------------------------*/
+.program_box{	
+	background-color: aquamarine;
+	margin-left: 10px;
 	margin-right: 50px;
-	height: 250px;
+	padding-left: 10px; /*文字の左側を空ける*/
 	
-	padding-left: 10px;
-	letter-spacing: 2px;
-}
+	overflow: auto;/*表示域を超えるとブラウザの設定に任せて処理(基本的にはスクロール設定)*/
+
+	letter-spacing: 0.5px; /*文字の間隔を空ける*/
+} /*サンプルプログラムの背景*/
+
+.program_box p{
+	line-height: 0.5em;
+} /*サンプルプログラムの行間*/
+
 .tab{
 	text-indent: 2em;
+} /*サンプルプログラム内のタブとして使用*/
+/*!サンプルプログラムの修飾------------------------------------------------------*/
+
+
+footer{
+	border-top: 2px solid black;
+	text-align: center;
 }
+
+
+/*お試し(要素を列表示する)-------------------------------------------------------------------------*/
+.off_float{
+	overflow:hidden;
+}
+
+.off_float .contents_list{
+	width: 300px;
+	float: left;
+}
+
+/*
+.off_float .main{
+	width: 900px;
+	float:left;
+}
+.off_float .side{
+	width:300px;
+	float:left;
+}
+*/
+/*!お試し-------------------------------------------------------------------------*/
+
+
+
+
+/*==========================================================================*/
+/*スマホ(小さい画面)での上書き修飾*/
+@media screen and (max-width: 479px)
+{
+	body{
+		font-size: 16px;
+	}
+
+	.wrapper{
+		width: auto;
+		padding: 0px 5px;
+	}
+
+	.program_box{	
+		margin-left: -2px;
+		margin-right: -2px;
+		padding-left: 10px; /*文字の左側を空ける*/
+		
+	} /*サンプルプログラムの背景*/
+
+	.program_box p{
+		line-height: 1em;
+	}
+	
+	.tab{
+		text-indent: 1em;
+	}
+}
+
+	/*お試し-------------------------------------------------------------------------*/
+	.main{
+		width:auto;
+		border: none;
+		float:none;
+	}
+	.side{
+		width:auto;
+		float:none;
+	}
+	/*!お試し-------------------------------------------------------------------------*/
+
+
+
 
 /*
 //CSSで設定するタグの解釈----------------------------------------------------

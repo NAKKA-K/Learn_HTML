@@ -12,6 +12,12 @@
 
 <!--==================================================================-->
 
+<!--
+body直下のh1に対して装飾を与える文
+<style>body>h1{}</style>
+
+-->
+
 <body>	<!--　ここにサイトに表示するコンテンツ内容を記述　-->
 	<h1>HTMLリファレンスサイト</h1>
 	<h2>現状説明</h2>
@@ -27,7 +33,8 @@
 	  <li>だったら学習がてら、忘れないようにリファレンスも作ってしまえ！</li>
 	</ul>	<!--リスト表示(Unordered List)-->
 
-	<h2>目次</h2>
+
+	<h2 class="contents_table">目次</h2>
 	<ol>
 	  <li>最初の一歩</li>
 	  <li>タイトルの設定</li>
@@ -43,11 +50,28 @@
 	</ol>	<!--数字付きリスト表示(Ordered List)-->
 
 
+
 	<h2 class="section_margin">1.最初の一歩</h2>
 	<p>とりあえず難しい事は考えずに、基本の書式を書いてみましょう。</p>
-	<p>&lt;html&gt;</p>
-	<p>&lt;head&gt;</p>
-
+	<div class="parallax">
+		<p>&lt;html&gt;</p>
+		
+		<!-- head -->
+		<p>&lt;head&gt;</p>
+		<p>&lt;/head&gt;</p>
+		
+		<!-- body -->
+		<p>&lt;body&gt;</p>
+			<div class="tab">
+			<p>&lt;p&gt;この文章をコピペしたら表示されるよ！&lt;/p&gt;</p>
+			</div>
+		<p>&lt;/body&gt;</p>
+		
+		<p>&lt;/head&gt;</p>
+	</div>
+	
+	
+	
 	
   	<footer class="section_margin">
 	  <p><a href="https://en.wikipedia.org/wiki/HTML">HTMLとは</a></p>

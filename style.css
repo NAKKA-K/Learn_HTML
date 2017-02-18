@@ -1,13 +1,42 @@
 @charset "UTF-8";
 
 *{
-	color:#ffffff;
-	background-color: #000000;
 }	/*全体に適応*/
+
+
+body {
+	background-color:antiquewhite;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+}
 
 .section_margin{
 	margin-top:100px;
 }	/*ハッシュタグ*/
+
+.contents_table{
+	margin-top:25px;
+}
+
+.contents_box{	
+	
+}
+.parallax{
+	background-color: aliceblue;
+	margin-left:10px;
+	margin-right: 50px;
+	height: 250px;
+	
+	padding-left: 10px;
+	letter-spacing: 2px;
+}
+.tab{
+	text-indent: 2em;
+}
 
 /*
 //CSSで設定するタグの解釈----------------------------------------------------

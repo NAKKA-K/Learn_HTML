@@ -27,75 +27,93 @@ body直下のpに対して装飾を与える文
 		<h1>HTMLリファレンスサイト</h1>
 	</header>
 	
-	<div class="wrapper">
+	
+	<div class="wrapper"><!-- header,footerを除く本文を囲む -->
 
-	<h2>現状説明</h2>
-
-	<p>私は現在、HTMLの学習をしております。 </p><!--　<p>とは段落を示すタグ　-->
-
-	<p>このサイト作成の経緯や目的を下記に記す </p>
-
-  	<ul>
-	  <li>&lt;webアプリケーション&gt;が作りたい！</li>
-	  <li>&lt;javasqript&gt;や&lt;PHP&gt;を使用してみたい！</li>
-	  <li>それらを作成するには&lt;HTML&gt;や&lt;CSS&gt;が出来ない事には始まらない！</li>
-	  <li>だったら学習がてら、忘れないようにリファレンスも作ってしまえ！</li>
-	</ul>	<!--リスト表示(Unordered List)-->
-		
-
-
-	<h2 class="contents_table">目次</h2>
 	<div class="off_float">
-	<ol class="contents_list">
-	  <li>最初の一歩</li>
-	  <li>タイトルの設定</li>
-	  <li>文字の表示</li>
-	  <li>サブタイトルの表示</li>
-	  <li>リストの表示</li>
-	  <li>強調表示</li>
-	</ol>	<!--数字付きリスト表示(Ordered List)-->
+	<div class="main"><!--画面の左側に表示されている、メインの記事-->
+			
 
-	
-	<ol start="7" class="contents_list">
-	  <li>ハイパーリンク</li>
-	  <li>画像の表示</li>
-	  <li>作者情報の表示</li>
-	  <li>CSSの書き方、呼び出し方</li>
-	  <li>CSSのよく使う設定</li>
-	  <li></li>		
-	</ol>
-	
+		<h2>現状説明</h2>
+		<p>私は現在、HTMLの学習をしております。 </p><!--　<p>とは段落を示すタグ　-->
+		<p>このサイト作成の経緯や目的を下記に記す </p>
+		<ul>
+		  <li>&lt;webアプリケーション&gt;が作りたい！</li>
+		  <li>&lt;javasqript&gt;や&lt;PHP&gt;を使用してみたい！</li>
+		  <li>それらを作成するには&lt;HTML&gt;や&lt;CSS&gt;が出来ない事には始まらない！</li>
+		  <li>だったら学習がてら、忘れないようにリファレンスも作ってしまえ！</li>
+		</ul>	<!--リスト表示(Unordered List)-->
+
+
+
+		<h2 class="contents_table">目次</h2>
+		<div class="off_float">
+			<ol class="contents_list">
+			  <li>最初の一歩</li>
+			  <li>タイトルの設定</li>
+			  <li>文字の表示</li>
+			  <li>サブタイトルの表示</li>
+			  <li>リストの表示</li>
+			  <li>強調表示</li>
+			</ol>	<!--数字付きリスト表示(Ordered List)-->
+			<ol start="7" class="contents_list">
+			  <li>ハイパーリンク</li>
+			  <li>画像の表示</li>
+			  <li>作者情報の表示</li>
+			  <li>CSSの書き方、呼び出し方</li>
+			  <li>CSSのよく使う設定</li>
+			  <li></li>		
+			</ol>
+		</div>
+
+
+
+		<h2 class="section_margin">1.最初の一歩</h2>
+		<p>とりあえず難しい事は考えずに、基本の文を書いてみましょう。</p>
+		<h4>sample001.html</h4>
+			<script src="https://gist.github.com/NAKKA-K/3c45750522ba7aa8f508349fccb7ca4c.js"></script>
+		<p>ブラウザで実行してみましょう。以下の様に表示されるかと思います。</p>
+		<img src="image/sample001.jpg" class="browser">
+		<p>基本の文が書ければ、後は自分の好きなように少しずつ改造していくだけです。</p>
+
+
+
+		<h2 class="section_margin">2.タイトルの設定</h2>
+		<p>ここからは前章で書いたプログラムより、詳しく設定していきます。</p>
+		<p>この章では、ブラウザのタブに表示されるタイトルの設定について書きます。</p>
+
+		<script src="https://gist.github.com/NAKKA-K/3c45750522ba7aa8f508349fccb7ca4c.js"></script>
+
+
 	</div>
-	
-	
-	<h2 class="section_margin">1.最初の一歩</h2>
-	<p>とりあえず難しい事は考えずに、基本の書式を書いてみましょう。</p>
-	<h4>sample001.html</h4>
-	<div class="program_box">
-		<p>&lt;&#33;DOCTYPE html&gt;</p>
+	<ol class="float_list"><!-- 常に画面右側に表示される目次 -->
+		  <li>最初の一歩</li>
+		  <li>タイトルの設定</li>
+		  <li>文字の表示</li>
+		  <li>サブタイトルの表示</li>
+		  <li>リストの表示</li>
+		  <li>強調表示</li>
+		  <li>ハイパーリンク</li>
+		  <li>画像の表示</li>
+		  <li>作者情報の表示</li>
+		  <li>CSSの書き方、呼び出し方</li>
+		  <li>CSSのよく使う設定</li>
+		  <li></li>		
+	</ol><!--数字付きリスト表示(Ordered List)-->
 
-		<p>&lt;html&gt;</p>
+
+
+	</div>
+
 		
-		<!-- head -->
-		<p>&lt;head&gt;</p>
-			<p class="tab">&lt;meta charset="UTF-8"&gt;</p>
-		<p>&lt;/head&gt;</p>
-
-		<!-- body -->
-		<p>&lt;body&gt;</p>
-			<p class="tab">&lt;p&gt;この文章をコピペしたら表示されます！&lt;/p&gt;</p>
-		<p>&lt;/body&gt;</p>
-		
-		<p>&lt;/html&gt;</p>
-	</div>
-	
-	</div>
-	
+				
+	</div><!-- !本文全てを囲む -->
 	
   	<footer class="section_margin">
 	  <p><a href="https://en.wikipedia.org/wiki/HTML">HTMLとは</a></p>
 	  <address>
-		  <p>プログラミング歴1年　初心者プログラマ作　2017-02-09~ 2017-02-19日更新</p>
+		  <p>プログラミング歴1年　初心者プログラマ作</p>
+		  <p>　2017-02-09~ 2017-02-19日更新</p>
 		  <p>walk on</p>
 	  </address>
 	</footer>

@@ -6,7 +6,7 @@
 body {
 	background-color: antiquewhite; /*背景色を変更*/
 	color: black; /*文字の色を変更*/
-	font-size: 22px;
+	font-size: 20px;
 
 } /*tagの修飾*/ /*bodyに追加修飾*/
 
@@ -15,11 +15,18 @@ header{
 	text-align: center; /*文字の表示位置を中央に*/
 }
 
+img.browser{
+	max-width: 880px;
+	max-height: 400px;
+}
+
 .wrapper{
+	background-color: cadetblue;
+
 	width: 1200px; /*表示領域を指定*/
 	margin: 0 auto; /*左右の表示域を標準に設定*/
-	padding: 0px;
-}
+	padding: 20px;
+} /*本文に適応*/
 
 .section_margin{
 	margin-top: 100px; /*margin:すべてのコンテンツの間を空ける*/
@@ -50,6 +57,27 @@ header{
 .tab{
 	text-indent: 2em;
 } /*サンプルプログラム内のタブとして使用*/
+
+/* program_boxの内容(現在は予備としておいてあるだけ)
+<div class="program_box">
+	<p>&lt;&#33;DOCTYPE html&gt;</p>
+		<p>&lt;html&gt;</p>
+
+	<!-- head -->
+	<p>&lt;head&gt;</p>
+		<p class="tab">&lt;meta charset="UTF-8"&gt;</p>
+	<p>&lt;/head&gt;</p>
+
+	<!-- body -->
+	<p>&lt;body&gt;</p>
+		<p class="tab">&lt;p&gt;この文章をコピペしたら表示されます！&lt;/p&gt;</p>
+	<p>&lt;/body&gt;</p>
+	<p>&lt;/html&gt;</p>
+</div>
+
+*/
+
+
 /*!サンプルプログラムの修飾------------------------------------------------------*/
 
 
@@ -59,27 +87,108 @@ footer{
 }
 
 
-/*お試し(要素を列表示する)-------------------------------------------------------------------------*/
+/*要素を列表示する-------------------------------------------------------------------------*/
 .off_float{
 	overflow:hidden;
-}
+} /*列表示する文を囲む*/
 
 .off_float .contents_list{
 	width: 300px;
 	float: left;
+} /*目次の列表示に使用*/
+
+
+.off_float .main{
+	width:880px;
+	float:left;
 }
 
-/*
-.off_float .main{
-	width: 900px;
-	float:left;
+.off_float .float_list{
+	background-color: aliceblue;
+	width:280px;
+	float:right;
+} /*画面の右側に固定表示される、サイト案内版に使用*/
+
+/*!要素を列表示する-------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*Gist(githubのサービスの1つである、gistの表示修飾を変更する)--------------------------------------------------*/
+
+.gist-data{
+	max-height: 450px;
+} /*プログラムの最大表示領域を、高さ450pxに設定*/
+
+
+
+.gist {
+	color: #000;
 }
-.off_float .side{
-	width:300px;
-	float:left;
+
+.gist div {
+	padding: 0;
+	margin: 0;
 }
-*/
-/*!お試し-------------------------------------------------------------------------*/
+
+.gist .gist-file {
+	border: 1px solid #dedede; /* gray */
+	font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+	margin-bottom: 1em;
+}
+
+.gist .gist-file .gist-meta {
+	overflow: hidden;
+	font-size: 75%;
+	padding: .5em;
+	color: #fff;
+	background-color: #555;
+} /*[タイトル hosted with  by GitHub]と書かれているところ*/
+
+.gist .gist-file .gist-meta a {
+	color: #6CF;
+} /*[タイトル]*/
+
+.gist .gist-file .gist-meta a:visited {
+	color:hotpink;
+} /*[GitHub]*/
+
+.gist .gist-file .gist-data {
+	overflow: auto;
+	word-wrap: normal;
+	background-color: #f8f8ff;
+	border-bottom: 1px solid #fff;
+	font-size: 100%;
+} /*プログラム枠と下枠の間*/
+
+.gist .gist-file .gist-data pre {
+	font-family: 'Bitstream Vera Sans Mono', 'Courier', monospace;
+	background: transparent !important;
+	margin: 0 !important;
+	border: none !important;
+	padding: .25em .5em .5em .5em !important;
+}
+
+.gist .gist-file .gist-data .gist-highlight {
+	background: transparent !important;
+}
+
+.gist .gist-file .gist-data .gist-line-numbers {
+	background-color: #ececec;
+	color: #aaa;
+	border-right: 1px solid #ddd;
+	text-align: right;
+}
+
+.gist .gist-file .gist-data .gist-line-numbers span {
+	clear: right;
+	display: block;
+}
+
+/*!Gist------------------------------------------------*/
+
 
 
 
@@ -94,7 +203,8 @@ footer{
 
 	.wrapper{
 		width: auto;
-		padding: 0px 5px;
+		padding: 0px 10px;
+		margin: none;
 	}
 
 	.program_box{	
@@ -111,19 +221,39 @@ footer{
 	.tab{
 		text-indent: 1em;
 	}
-}
 
-	/*お試し-------------------------------------------------------------------------*/
-	.main{
+	
+
+	/*要素を列表示する-------------------------------------------------------------------------*/
+
+	.off_float .contents_list{
+		width: auto;
+		float: none;
+	} /*目次の列表示に使用*/
+
+	.float_list{
 		width:auto;
-		border: none;
+		float:none;
+	} /*画面の右側に固定表示される、サイト案内版に使用*/
+
+
+	.off_float .main{
+		width:auto;
 		float:none;
 	}
-	.side{
+
+	.off_float .float_list{
 		width:auto;
 		float:none;
-	}
-	/*!お試し-------------------------------------------------------------------------*/
+		display: none;
+	} /*画面の右側に固定表示される、サイト案内版に使用*/
+
+	
+	/*!要素を列表示する-------------------------------------------------------------------------*/
+	
+	
+	
+}
 
 
 

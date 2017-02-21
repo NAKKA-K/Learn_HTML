@@ -7,8 +7,12 @@ body {
 	background-color: antiquewhite; /*背景色を変更*/
 	color: black; /*文字の色を変更*/
 	font-size: 20px;
-
+	line-height: 1.5;
 } /*tagの修飾*/ /*bodyに追加修飾*/
+
+p{
+	margin:7px auto; /*上下の間隔を小さく*/
+}
 
 header{
 	border-bottom: 2px solid black; /*領域の下に線を引く(太さ、色)*/
@@ -21,15 +25,15 @@ img.browser{
 }
 
 .wrapper{
-	background-color: cadetblue;
-
+	background-color:burlywood;
+	
 	width: 1200px; /*表示領域を指定*/
 	margin: 0 auto; /*左右の表示域を標準に設定*/
 	padding: 20px;
 } /*本文に適応*/
 
 .section_margin{
-	margin-top: 100px; /*margin:すべてのコンテンツの間を空ける*/
+	margin-top: 150px; /*margin:すべてのコンテンツの間を空ける*/
 } /*クラス*/ /*大きい項目ごとに適応*/
 
 .contents_table{
@@ -51,7 +55,7 @@ img.browser{
 } /*サンプルプログラムの背景*/
 
 .program_box p{
-	line-height: 0.5em;
+	line-height: 0.5;
 } /*サンプルプログラムの行間*/
 
 .tab{
@@ -104,9 +108,14 @@ footer{
 }
 
 .off_float .float_list{
-	background-color: aliceblue;
-	width:280px;
-	float:right;
+	background-color: azure;
+	width:278px;
+	margin-left: 900px;
+	padding-top:10px;
+	padding-bottom:10px;
+	position:fixed;
+	border: 1px solid #585656;
+	
 } /*画面の右側に固定表示される、サイト案内版に使用*/
 
 /*!要素を列表示する-------------------------------------------------------------------------*/

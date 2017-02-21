@@ -28,7 +28,7 @@ body直下のpに対して装飾を与える文
 	</header>
 	
 	
-	<div class="wrapper"><!-- header,footerを除く本文を囲む -->
+	<div class="wrapper"><!-- header,footerを除く本文を囲む=========================== -->
 
 	<div class="off_float">
 	<div class="main"><!--画面の左側に表示されている、メインの記事-->
@@ -45,69 +45,104 @@ body直下のpに対して装飾を与える文
 		</ul>	<!--リスト表示(Unordered List)-->
 
 
+		
 
 		<h2 class="contents_table">目次</h2>
 		<div class="off_float">
 			<ol class="contents_list">
 			  <li>最初の一歩</li>
 			  <li>タイトルの設定</li>
-			  <li>文字の表示</li>
 			  <li>サブタイトルの表示</li>
 			  <li>リストの表示</li>
 			  <li>強調表示</li>
+			  <li>画像の表示</li>
 			</ol>	<!--数字付きリスト表示(Ordered List)-->
 			<ol start="7" class="contents_list">
 			  <li>ハイパーリンク</li>
-			  <li>画像の表示</li>
 			  <li>作者情報の表示</li>
 			  <li>CSSの書き方、呼び出し方</li>
-			  <li>CSSのよく使う設定</li>
-			  <li></li>		
+			  <li>CSSで使う定番</li>
+			  <li>CSSのよく使う設定一覧</li>		
+			  <li>このサイトに使われている技</li>		
 			</ol>
 		</div>
 
 
+		
 
 		<h2 class="section_margin">1.最初の一歩</h2>
 		<p>とりあえず難しい事は考えずに、基本の文を書いてみましょう。</p>
 		<h4>sample001.html</h4>
 			<script src="https://gist.github.com/NAKKA-K/3c45750522ba7aa8f508349fccb7ca4c.js"></script>
 		<p>ブラウザで実行してみましょう。以下の様に表示されるかと思います。</p>
-		<img src="image/sample001.jpg" class="browser">
+			<img src="image/sample001.jpg" class="browser">
 		<p>基本の文が書ければ、後は自分の好きなように少しずつ改造していくだけです。</p>
+		<p>このサイト解説の前提となる用語も紹介しておきます。</p>
+		<p>先ほど書いた.html形式のファイルをHTMLファイル、HTMLの見た目をいい感じ装飾するために使われる.css形式のcssファイルが存在します。</p>
+		<p>HTMLの中に出てくる&lt;&gt;で囲まれた命令をタグといいます。命令タグによってそれぞれの効果があり、それらを適切に組み合わせていくことでHTMLを記述します。</p>
+		<p>今回のHTMLに登場したpタグは、文字列を表示して改行という意味です。一つのタグの中であれば改行されません。</p>
 
 
+
+		
 
 		<h2 class="section_margin">2.タイトルの設定</h2>
 		<p>ここからは前章で書いたプログラムより、詳しく設定していきます。</p>
-		<p>この章では、ブラウザのタブに表示されるタイトルの設定について書きます。</p>
+		<p>ブラウザのタブに表示される、タイトルの設定をしてみましょう。</p>
+			<script src="https://gist.github.com/NAKKA-K/1911607eed3702e938138a4c9a87be51.js"></script>
+		<p>上記の様に、titleタグで囲まれた部分がタイトルとして表示されます。</p>
 
-		<script src="https://gist.github.com/NAKKA-K/3c45750522ba7aa8f508349fccb7ca4c.js"></script>
+
+		
+		
+
+		<h2 class="section_margin">3.サブタイトルの表示</h2>
+		<p>太文字、大文字のサブタイトルを表示する方法を説明します。</p>
+		<p>HTMLにはサブタイトルを表示するためのタグが存在します。それらのタグはh1タグ～h6タグまで存在し、数値が小さいほど文字サイズも小さくなっていきます。</p>
+			<script src="https://gist.github.com/NAKKA-K/a1aef8c2849607463eb4df053ebe5db2.js"></script>
+		<p>ブラウザで実行してみましょう。以下の様に表示されるかと思います。</p>
+			<img src="image/sample003.jpg" class="browser">
+
+
+
+
+		<h2 class="section_margin">4.リストの表示</h2>
+		<p>サイトを作っていると、要素の箇条書きだったり、先頭に番号を振った目次のようなものを作りたい時がります。</p>
+		<p>そんな時、pタグを使って1行ずつ書いていくと面倒だったり、後からHTMLを読んだときにパッと見で関連する項目が分かりずらかったりします。そんな時に使用すると便利なタグを紹介します。</p>
+			<script src="https://gist.github.com/NAKKA-K/b52f9ff541df89fa8a4706a541c7764e.js"></script>
+		<p>ブラウザで実行してみましょう。以下の様に表示されるかと思います。</p>
+			<img src="image/sample004.jpg" class="browser">
+
+
+
+
+
+
 
 
 	</div>
 	<ol class="float_list"><!-- 常に画面右側に表示される目次 -->
-		  <li>最初の一歩</li>
-		  <li>タイトルの設定</li>
-		  <li>文字の表示</li>
-		  <li>サブタイトルの表示</li>
-		  <li>リストの表示</li>
-		  <li>強調表示</li>
-		  <li>ハイパーリンク</li>
-		  <li>画像の表示</li>
-		  <li>作者情報の表示</li>
-		  <li>CSSの書き方、呼び出し方</li>
-		  <li>CSSのよく使う設定</li>
-		  <li></li>		
+		<li>最初の一歩</li>
+		<li>タイトルの設定</li>
+		<li>サブタイトルの表示</li>
+		<li>リストの表示</li>
+		<li>強調表示</li>
+		<li>画像の表示</li>
+		<li>ハイパーリンク</li>
+		<li>作者情報の表示</li>
+		<li>CSSの書き方、呼び出し方</li>
+		<li>CSSで使う定番</li>
+		<li>CSSのよく使う設定一覧</li>		
+		<li>このサイトに使われている技</li>		
 	</ol><!--数字付きリスト表示(Ordered List)-->
-
-
-
+	
 	</div>
-
-		
-				
-	</div><!-- !本文全てを囲む -->
+	
+	</div><!-- !本文全てを囲む======================================================= -->
+	
+	
+	
+	
 	
   	<footer class="section_margin">
 	  <p><a href="https://en.wikipedia.org/wiki/HTML">HTMLとは</a></p>
@@ -117,6 +152,7 @@ body直下のpに対して装飾を与える文
 		  <p>walk on</p>
 	  </address>
 	</footer>
+
 
 </body>
 

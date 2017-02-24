@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+p{color:blue;} /*タグ(今あるタグに情報を追加)*/
+font1{font-size:25px;} /*タグ(新しいタグとして設定)*/
+#font2{font-size:35px;} /*ハッシュ*/
+.font3{font-size:45px;} /*クラス*/

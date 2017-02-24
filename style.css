@@ -4,7 +4,7 @@
 
 
 body {
-	background-color: antiquewhite; /*背景色を変更*/
+	background-color:bisque; /*背景色を変更*/
 	color: black; /*文字の色を変更*/
 	font-size: 20px;
 	line-height: 1.5;
@@ -24,9 +24,7 @@ img.browser{
 	max-height: 400px;
 }
 
-.wrapper{
-	background-color:burlywood;
-	
+.wrapper{	
 	width: 1200px; /*表示領域を指定*/
 	margin: 0 auto; /*左右の表示域を標準に設定*/
 	padding: 20px;
